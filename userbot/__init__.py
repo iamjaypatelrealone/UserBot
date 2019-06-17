@@ -50,9 +50,9 @@ if CONFIG_CHECK:
 
 API_KEY = os.environ.get("API_KEY", 762891)
 
-OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", bb8b2dfc9f007570ff5bf4c63a4d52e6)
+OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 
-API_HASH = os.environ.get("API_HASH", None)
+API_HASH = os.environ.get("API_HASH", bb8b2dfc9f007570ff5bf4c63a4d52e6)
 
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
