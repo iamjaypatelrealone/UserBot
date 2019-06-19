@@ -530,6 +530,18 @@ async def typewriter(typew):
             await typew.edit(old_text)
             await asyncio.sleep(sleep_time)
 
+
+@register(outgoing=True, pattern="^.hack$")
+async def hacking (hacked):
+    """ Dont Hack Too much -_-"""
+    if not hacked.text[0].isalpha() and hacked.text[0] not in ("/", "#", "@", "!"):
+        if await hacked.get_reply_message():
+            await hacked.edit(
+                "Targeted Account Hacked successfully ??......\n"
+                "Pay 6969$ to @kingtarun1 To Remove This Hack...\n"
+            )
+
+
 CMD_HELP.update({
-    "memes": "Ask Thoncc (@Skittles9823Bot) for that."
+    "memes": "Ask jhaatu (@shivamkchoudhary) for that."
 })
